@@ -22,7 +22,7 @@
 		$song->setArtistId($artist_id);
 		$song->setGenreId($genre_id);
 		$song->save();
-		#The snippet posted didn't work unless displayed regardless whether submit is set or not. This shows it only after submitted. 
+		#The snipped would show regardless whether submit is set or not. I put this in the brackets to show it only after submitted. 
 		echo "<p>The song \"" .  $song->getTitle() . "\" with an ID of " . $song->getId() . " was inserted successfully!</p>";
 	}
 ?>
